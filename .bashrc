@@ -41,8 +41,8 @@ alias arduino='/usr/local/bin/arduino-1.6.12/arduino'
 
 # General Convenience
 alias b='cd -'
-alias la='ls -la'
-alias l='ls -l'
+alias la='ls -lAh'
+alias l='ls -lh'
 alias mute='amixer set Master toggle'
 alias x='chmod +x'
 alias gdb='gdb -q'
@@ -52,8 +52,14 @@ alias bs='xbacklight -set'
 alias bu='xbacklight -inc 5'
 alias bd='xbacklight -dec 5'
 
+alias df='df -Tha --total'
+alias du='du -ach | sort -h'
+alias myip="curl http://ipecho.net/plain; echo"
+
 # School
 alias ews='ssh ashrafa2@linux.ews.illinois.edu'
+alias compile='clang++ -std=c++1y -stdlib=libc++ -g -O0 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable -MMD -MP -c'
+alias link='clang++ -std=c++1y -stdlib=libc++ -lpng -lc++abi -lpthread' 
 
 # LC-3
 alias lc3convert='/home/ashrafadj/.lc3/lc3convert'
@@ -64,3 +70,6 @@ alias lc3sim-tk='/home/ashrafadj/.lc3/lc3sim-tk'
 # Hadoop
 alias hadoop='/usr/bin/hadoop-2.8.1/bin/hadoop'
 alias hdfs='/usr/bin/hadoop-2.8.1/bin/hdfs'
+
+
+export PATH=$PATH:/usr/local/bin/mysql-5.7.20-linux-glibc2.12-x86_64/bin
