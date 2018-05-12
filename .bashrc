@@ -41,6 +41,7 @@ alias arduino='/usr/local/bin/arduino-1.6.12/arduino'
 
 # General Convenience
 alias b='cd -'
+alias ls='ls --color=auto'
 alias la='ls -lAh'
 alias l='ls -lh'
 alias mute='amixer set Master toggle'
